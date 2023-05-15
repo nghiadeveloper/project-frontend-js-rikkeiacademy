@@ -9,7 +9,7 @@ function loadCategories() {
         rows += `<tr>
                     <td>${c.id}</td>
                     <td>${c.name}</td>
-                    <td>${c.status ? 'Hoạt động' : 'Không hoạt động'}</td>
+                    <td><span class="badge badge-success">${c.status ? 'Hoạt động' : 'Không hoạt động'}</span></td>
                     <td>
                         <button class="btn btn-warning" onclick="editCategory(event, ${c.id})">Sửa</button> 
                         <button class="btn btn-danger"  onclick="delCategory(event, ${c.id})">Xóa</button>
