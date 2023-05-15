@@ -57,6 +57,7 @@ function buy(evt, proId, proName, proPrice, proImage) {
             price: proPrice,
             quantity: 1,
         });
+        alert("Thêm thành công");
     }
     // Lưu session
     localStorage.setItem('carts', JSON.stringify(carts));
